@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <section class="box">
+      <nav class="navbar">
+        <div class="logo">🍔 Burger House</div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">Home</a>
+          <a href="services.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <div class="sec-1">
+        <h1>
+          Juicy Burgers <br />
+          Made Fresh Daily
+        </h1>
+        <p>Experience bold flavors crafted with premium ingredients</p>
+        <a href="services.html" class="btn">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+
+    <section class="sec-2">
+      <div class="sec-22">
+        <h3>🔥 Fresh Ingredients</h3>
+        <p>Only the best quality meats and veggies</p>
+      </div>
+      <div class="sec-22">
+        <h3>⚡ Fast Delivery</h3>
+        <p>Hot and fresh at your doorstep</p>
+      </div>
+      <div class="sec-22">
+        <h3>🍟 Tasty Sides</h3>
+        <p>Fries, shakes and more to complete your meal</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>🍔 Burger House</h3>
+    <p>Serving fresh and delicious burgers every day!</p>
+
+    <div class="foot">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="copyright">© 2026 Burger House. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
