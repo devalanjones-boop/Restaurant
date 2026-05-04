@@ -30,7 +30,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  position: relative;
 }
 
 .logo {
@@ -117,60 +116,95 @@ body {
 }
 
 .sec-22 p {
-  font-size: 14px;
-  opacity: 0.8;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 /* Sections */
 .section {
-  padding: 60px 20px;
-  text-align: center;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Grid */
 .grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Card */
 .card {
-  background: black;
-  padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s;
+    background: black;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 /* footer */
 .footer {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
 }
 
 .foot {
-  margin: 15px 0;
+    margin: 15px 0;
+}
+.footer-content h3 {
+    color: rgb(250, 107, 4);  
 }
 
 .foot a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .foot a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .foot p {
-  font-size: 14px;
-  opacity: 0.8;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.about-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 45px 35px 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.contact-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 45px 35px 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
 }
 
 /* Tablet */
@@ -182,6 +216,15 @@ body {
 .navbar {
     padding: 20px 30px;
 }
+
+.about-sec {  
+    height: 84vh;
+    justify-content: center;
+}
+.contact-sec {
+    height: 85vh;
+}
+
 }
 
 /* Desktop */
@@ -224,3 +267,4 @@ body {
     display: flex;
   }
 }
+
